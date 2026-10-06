@@ -21,22 +21,22 @@ The repository is organized into four independent modules. They can be executed 
 ### 1. Causal Structure Learning
 **Script:** `01_causal_dag.py`
 * **Function:** Implements a Hill-Climbing algorithm with a Bayesian Information Criterion (BIC) scoring method to infer a Directed Acyclic Graph (DAG).
-* **Output:** Generates the causal hierarchy network (Figure 67), mapping the physical sequence of events during synthesis.
+* **Output:** Generates the causal hierarchy network, mapping the physical sequence of events during synthesis.
 
 ### 2. Non-Linear Interaction Network
 **Script:** `02_interaction_network.py`
 * **Function:** Trains independent Random Forest Regressors to extract Gini feature importances, constructing a weighted bipartite graph of non-linear interactions.
-* **Output:** Generates the operational influence network (Figure 68), visualizing the predominant drivers for each textural property.
+* **Output:** Generates the operational influence network, visualizing the predominant drivers for each textural property.
 
 ### 3. Thermodynamic Landscapes
 **Script:** `03_thermodynamic_landscapes.py`
 * **Function:** Deploys a universal ensemble simulator to evaluate a dense predictive grid, holding surfactant topologies constant while mapping reaction kinetics.
-* **Output:** Generates 3D response surfaces for CTAB (Figure 69) and Pluronic F127 (Figure 70), along with pseudo-Arrhenius kinetic extrapolations (Figure 71).
+* **Output:** Generates 3D response surfaces for CTAB and Pluronic F127, along with pseudo-Arrhenius kinetic extrapolations.
 
 ### 4. Green Chemistry Optimization
 **Script:** `04_green_chemistry_metrics.py`
 * **Function:** Computes standardized sustainability metrics (E-factor, Process Mass Intensity, Energy Proxy) and identifies the Pareto-optimal recipes via a multi-objective scoring function.
-* **Output:** Generates a comparative radar chart (Figure 72) mapping the environmental and performance footprint of the optimal synthesis routes.
+* **Output:** Generates a comparative radar chart mapping the environmental and performance footprint of the optimal synthesis routes.
 
 ## Execution
 
