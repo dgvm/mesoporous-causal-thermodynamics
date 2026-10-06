@@ -128,7 +128,7 @@ def build_interaction_network():
     ax.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, -0.05), ncol=2, fontsize=11, frameon=False)
     
     plt.tight_layout()
-    plt.savefig(os.path.join(OUTPUT_DIR, 'Fig68_interaction_network.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(OUTPUT_DIR, 'Fig_interaction_network.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
 if __name__ == '__main__':
