@@ -36,7 +36,7 @@ def generate_thermodynamic_plots():
     for target in ['SBET', 'DP', 'VT']:
         
         # ---------------------------------------------------------
-        # Fig 69: 3D Landscape for CTAB (MCM-41)
+        # Fig: 3D Landscape for CTAB (MCM-41)
         # ---------------------------------------------------------
         temps_ctab = np.linspace(20, 100, 30)
         times_ctab = np.linspace(1, 48, 30)
@@ -67,11 +67,11 @@ def generate_thermodynamic_plots():
         ax.set_zlabel(f'Predicted {target}')
         fig.colorbar(surf, ax=ax, shrink=0.5, aspect=5)
         plt.tight_layout()
-        plt.savefig(os.path.join(OUTPUT_DIR, f'Fig69_landscape_CTAB_{target}.png'), dpi=300)
+        plt.savefig(os.path.join(OUTPUT_DIR, f'Fig_landscape_CTAB_{target}.png'), dpi=300)
         plt.close()
         
         # ---------------------------------------------------------
-        # Fig 70: 3D Landscape for Pluronic (SBA-15)
+        # Fig: 3D Landscape for Pluronic (SBA-15)
         # ---------------------------------------------------------
         temps_plur = np.linspace(40, 150, 30)
         times_plur = np.linspace(1, 48, 30)
@@ -102,11 +102,11 @@ def generate_thermodynamic_plots():
         ax.set_zlabel(f'Predicted {target}')
         fig.colorbar(surf, ax=ax, shrink=0.5, aspect=5)
         plt.tight_layout()
-        plt.savefig(os.path.join(OUTPUT_DIR, f'Fig70_landscape_Pluronic_{target}.png'), dpi=300)
+        plt.savefig(os.path.join(OUTPUT_DIR, f'Fig_landscape_Pluronic_{target}.png'), dpi=300)
         plt.close()
         
         # ---------------------------------------------------------
-        # Fig 71: Universal Arrhenius Kinetics
+        # Fig: Universal Arrhenius Kinetics
         # ---------------------------------------------------------
         temps_arrhenius = np.linspace(30, 150, 50)
         inverse_T = 1000 / (temps_arrhenius + 273.15)
@@ -136,7 +136,7 @@ def generate_thermodynamic_plots():
         plt.ylabel(f'ln({target})')
         plt.legend()
         plt.tight_layout()
-        plt.savefig(os.path.join(OUTPUT_DIR, f'Fig71_arrhenius_{target}.png'), dpi=300)
+        plt.savefig(os.path.join(OUTPUT_DIR, f'Fig_arrhenius_{target}.png'), dpi=300)
         plt.close()
 
 if __name__ == '__main__':
