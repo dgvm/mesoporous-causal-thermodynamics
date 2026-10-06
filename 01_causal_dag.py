@@ -86,7 +86,7 @@ def build_causal_dag():
     
     plt.axis('off')
     plt.tight_layout()
-    plt.savefig(os.path.join(OUTPUT_DIR, 'Fig67_causal_dag.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(OUTPUT_DIR, 'Fig_causal_dag.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
 if __name__ == '__main__':
