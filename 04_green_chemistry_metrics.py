@@ -51,7 +51,7 @@ def compute_green_metrics(df):
 def generate_green_radar():
     """
     Simulates recipes, extracts optimal green recipes for both ionic and non-ionic templates,
-    and plots a comparative radar chart (Fig 72).
+    and plots a comparative radar chart.
     """
     df_raw = pd.read_csv(DATA_FILE)
     
@@ -176,7 +176,7 @@ def generate_green_radar():
     plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1.1), fontsize=10)
     
     plt.tight_layout()
-    plt.savefig(os.path.join(OUTPUT_DIR, 'Fig72_green_radar.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(OUTPUT_DIR, 'Fig_green_radar.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
 if __name__ == '__main__':
